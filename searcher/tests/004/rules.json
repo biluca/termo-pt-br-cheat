@@ -1,0 +1,29 @@
+{
+    "known_letters": [
+        {
+            "letter": "C",
+            "position": 0
+        },
+        {
+            "letter": "O",
+            "position": 4
+        },
+        {
+            "letter": "O",
+            "position": 4
+        },
+        {
+            "letter": "O",
+            "position": 4
+        },
+        {
+            "letter": "O",
+            "position": 4
+        },
+        {
+            "letter": "O",
+            "position": 4
+        }
+    ],
+    "unknown_letters": []
+}
