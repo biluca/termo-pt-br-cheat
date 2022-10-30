@@ -33,13 +33,20 @@ def search_known_letters(rules, words_collection):
     return filtered_words
 
 
-def search_unknown_letters(rules, words_collection):
+def search_unknown_letters(rules, words_collection, flag=0):
     if not rules:
         return words_collection
 
+    for rule in rules:
+        words_collection = search_unknown_letter(rule["letter"], words_collection)
+
+    return words_collection
+
+
+def search_unknown_letter(letter, words_collection):
+
     filtered_words = []
     should_not_remove_words = []
-    rules_count = len(rules)
 
     for line in words_collection:
         filtered_words.append(line.replace("\n", ""))
@@ -47,13 +54,11 @@ def search_unknown_letters(rules, words_collection):
     for word in filtered_words:
         should_not_remove = 0
         for index, character in enumerate(word):
-            for rule in rules:
-                letter = rule["letter"]
-                last_character = "#" if index == 0 else word[index - 1]
-                if character == letter and character != last_character:
-                    should_not_remove = should_not_remove + 1
+            last_character = "#" if index == 0 else word[index - 1]
+            if character == letter and character != last_character:
+                should_not_remove = should_not_remove + 1
 
-        if should_not_remove == 0 or should_not_remove != rules_count:
+        if should_not_remove == 0:
             should_not_remove_words.append(word)
 
     for word in should_not_remove_words:
