@@ -10,8 +10,13 @@
         }
     ],
     "unknown_letters": [
-        {
-            "letter": "N"
-        }
+        "A",
+        "B",
+        "C"
+    ],
+    "exclude_letters": [
+        "A",
+        "B",
+        "C"
     ]
 }

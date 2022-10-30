@@ -19,5 +19,6 @@
         {
             "letter": "C"
         }
-    ]
+    ],
+    "exclude_letters": []
 }

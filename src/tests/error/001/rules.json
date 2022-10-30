@@ -25,5 +25,6 @@
             "position": 4
         }
     ],
-    "unknown_letters": []
+    "unknown_letters": [],
+    "exclude_letters": []
 }

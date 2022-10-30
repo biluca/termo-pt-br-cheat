@@ -6,5 +6,5 @@ def print_words(words_colletion):
         print(word.replace("\n", ""))
 
 
-words_colletion = searcher.main("searcher/rules.json", "words.txt")
+words_colletion = searcher.main("src/rules.json", "words.txt")
 print_words(words_colletion)

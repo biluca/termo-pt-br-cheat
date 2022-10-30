@@ -1,0 +1,5 @@
+{
+    "known_letters": [],
+    "unknown_letters": [],
+    "exclude_letters": ["A", "E", "B"]
+}

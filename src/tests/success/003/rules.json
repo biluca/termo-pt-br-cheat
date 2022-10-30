@@ -9,9 +9,6 @@
             "position": 4
         }
     ],
-    "unknown_letters": [
-        {
-            "letter": "S"
-        }
-    ]
+    "unknown_letters": [],
+    "exclude_letters": []
 }
