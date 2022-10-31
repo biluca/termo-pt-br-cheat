@@ -114,11 +114,6 @@ def validate_rules(all_rules):
             "THE UNKNOWN LETTERS RULES COLLECTION SHOULD NOT HAVE MORE THAN 5 LETTERS"
         )
 
-    if len(all_rules["exclude_letters"]) > 5:
-        error_message = (
-            "THE EXCLUDE LETTERS RULES COLLECTION SHOULD NOT HAVE MORE THAN 5 LETTERS"
-        )
-
     if error_message:
         raise OverflowError(error_message)
 

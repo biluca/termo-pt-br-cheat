@@ -1,5 +1,30 @@
 {
-    "known_letters": [],
+    "known_letters": [
+        {
+            "letter": "E",
+            "position": 1
+        },
+        {
+            "letter": "N",
+            "position": 2
+        },
+        {
+            "letter": "D",
+            "position": 3
+        },
+        {
+            "letter": "A",
+            "position": 4
+        }
+    ],
     "unknown_letters": [],
-    "exclude_letters": []
+    "exclude_letters": [
+        "S",
+        "I",
+        "O",
+        "C",
+        "U",
+        "L",
+        "T"
+    ]
 }
